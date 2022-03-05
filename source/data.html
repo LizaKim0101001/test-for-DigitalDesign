@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test for Digital Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+    <header class="header">
+      <div class="wrapper-header">
+        <nav class="navigation">
+        <img class="logo" src="../img/logo.svg" alt="Логотип">
+          <ul class="navigation__list">
+            <li class="navigation__item"> <a class="navigation__item__link" href="index.html">JS</a></li>
+            <li class="navigation__item"><a class="navigation__item__link" href="data.html">Дата</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper-data">
+        <section class="data">
+            <h1 class="main__title">Информация о дате</h1>
+            <form class="data__form form" action="">
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="data-input">
+                        Введите дату:
+                    </label>
+                    <input id="data-input-date" class="form__input" type="date" placeholder="hi" />
+                    <input id="data-input-text" class="form__input" type="text" placeholder="дд.мм.гггг">
+                </fieldset>
+                <button id="calculate" class="form__button" type="button">Узнать</button>
+                <button id="clear" class="form__button" type="reset">Очистить</button>
+            </form>
+            <div class="data__result">
+                <p class="data__result__text">Результат: 
+                    <span class="day"></span> 
+                    <span class="week"></span>
+                    <span class="month"></span>
+                    <span class="year"></span>
+                </p>
+            </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper-footer">
+        <nav class="navigation">
+          <img class="logo" src="../img/logo.svg" alt="Логотип">
+            <ul class="navigation__list">
+              <li class="navigation__item"> <a class="navigation__item__link"  href="tel:+79647730050">телефон</a></li>
+              <li class="navigation__item"><a class="navigation__item__link"  href="mailto:elithabedkim@gmail.com">email</a></li>
+              <li class="navigation__item"><a class="navigation__item__link"  href="">github</a></li>
+            </ul>
+          </nav>
+      </div>
+    </footer>
+    <script src="js/data.js">
+      
+    </script>
+</body>
+</html>
