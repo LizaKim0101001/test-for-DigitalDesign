@@ -1,0 +1,30 @@
+.btn-scroll-up{
+    position: fixed;
+    display: inline;
+    background-color: @dark-blue;
+    color: @white;
+    right: 0px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    transform: rotate(-90deg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @media (min-width: @tablet){
+        right: 3%;
+    }
+    @media (min-width: @desktop){
+        right: 11%;
+    }
+}
+
+.btn-scroll-up:hover{
+    background-color: @background;
+    border: 1px solid @dark-blue;
+    color: @dark-blue;
+}
+.btn-scroll-up:active{
+    opacity: 0.5;
+}

@@ -1,24 +1,12 @@
 const dataInputText = document.querySelector('#data-input-text');
-const dataInputDate = document.querySelector('#data-input-date')
-const btn = document.querySelector("#calculate")
-const btnClear = document.querySelector("#clear")
+const dataInputDate = document.querySelector('#data-input-date');
+const btn = document.querySelector("#calculate");
+const btnClear = document.querySelector("#clear");
 // переменные для записи результата на страницу
-const pYear = document.querySelector('.year')
-const pMonth = document.querySelector('.month')
-const pWeek = document.querySelector('.week')
-const pDay = document.querySelector('.day')
-/*
-dataInput.addEventListener('change', ()=>{
-    let dataInputValue = dataInput.value;
-    let date = new Date (dataInputValue)
-    console.log(date.getFullYear());
-    console.log(date.getMonth());
-    console.log(date.getDate());
-    console.log(date.getDay());
-})   
-*/
-
-
+const pYear = document.querySelector('.year');
+const pMonth = document.querySelector('.month');
+const pWeek = document.querySelector('.week');
+const pDay = document.querySelector('.day');
 
 //функция которая позволяет узнать из строчки вида "дд.мм.ггг" значение
 // день недели, номер недели, название месяца и год
