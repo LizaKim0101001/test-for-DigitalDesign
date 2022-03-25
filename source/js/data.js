@@ -24,15 +24,17 @@ const getDayInfo = function (strng, normalDate) {
     const data = allDate.getDate()
     const day = allDate.getDay()
     // вывод в консоль результата
-    console.log(getNameDay(day) + ', ' + getWeekNumber(data) + ' ' + 'неделя, ' + getMonth(numberMonth) + ', ' + year + ' ' + 'года');
+    console.log(allDate.toLocaleDateString('ru', {weekday: 'long'}) + ', ' + getWeekNumber(data) + ' ' + 'неделя, ' + allDate.toLocaleDateString('ru', {month: "long"}) + ', ' + year + ' ' + 'года');
     // вывод на страницу результата
     pYear.textContent = `${year} года.`;
-    pMonth.textContent = `${getMonth(numberMonth)}`;
+    //pMonth.textContent = `${getMonth(numberMonth)}`;
+    pMonth.textContent = allDate.toLocaleDateString('ru', {month: "long"})
     pWeek.textContent = `${getWeekNumber(data)} неделя`;
-    pDay.textContent = `${getNameDay(day)},`
+    //pDay.textContent = `${getNameDay(day)},`
+    pDay.textContent= allDate.toLocaleDateString('ru', {weekday: 'long'})
 }
 //функция для молучения названия месяца
-const getMonth = function(number){
+/*const getMonth = function(number){
     let month;
     switch (number) {
         case 0:
@@ -79,7 +81,7 @@ const getMonth = function(number){
     }
     return month
 }
-
+*/
 // функция для получения номера недели
 const getWeekNumber = function (numberDay) {
     let weekCount = 0
@@ -97,7 +99,7 @@ const getWeekNumber = function (numberDay) {
     };
     return weekCount;
 }
-
+/*
 //для молучения названия дня
 const getNameDay = function (countOfDay) {
     let daysName;
@@ -130,7 +132,7 @@ const getNameDay = function (countOfDay) {
     }
     return daysName;
 }
-
+*/
 // вызов функции по нажатия кнопки
 btn.addEventListener('click', ()=>{
     console.log(dataInputDate.value);
