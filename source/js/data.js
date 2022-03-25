@@ -97,6 +97,9 @@ const getWeekNumber = function (numberDay) {
     if (numberDay > 21) {
         weekCount = 4
     };
+    if (numberDay > 28){
+        weekCount = 5
+    }
     return weekCount;
 }
 /*
